@@ -9,16 +9,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+
 </head>
 <body>
+  <!-- Skip link para accesibilidad -->
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
   <header class="site-header">
     <div class="container header-grid">
       <div class="id-block">
         <img class="avatar" width="128" height="128" alt="Foto de perfil de Marcelo Siles"
-             src="img/perfil.png"/>
+             src="img/perfil.png" loading="lazy" />
         <div>
-       <h1 class="name">Marcelo Siles Ramirez</h1>
-          <p class="role"></p>
+          <h1 class="name">Marcelo Siles Ramirez</h1>
+        
           <ul class="meta">
             <li>📧 <a href="mailto:marcespit27@gmail.com">marcespit27@gmail.com</a></li>
             <li>📱 <a href="tel:+59178600011">+591 78600011</a></li>
@@ -27,7 +31,7 @@
         </div>
       </div>
 
-            <nav class="site-nav" aria-label="Secciones del currículum">
+      <nav class="site-nav" aria-label="Menú principal">
         <a href="#sobre-mi">Sobre mí</a>
         <a href="#formacion">Formación</a>
         <a href="#habilidades">Habilidades</a>
@@ -36,7 +40,7 @@
     </div>
   </header>
 
-  <main class="container">
+  <main id="main-content" class="container">
     <section id="sobre-mi" class="card">
       <h2>Sobre mí</h2>
       <p>
