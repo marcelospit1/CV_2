@@ -175,29 +175,29 @@
       display: block;
     }
 
-    /* Skills container */
-    .skills-container {
+    /* habilidades container */
+    .habilidades-container {
       display: grid;
       grid-template-columns: 1fr;
       gap: 1.5rem;
       margin-top: 1rem;
     }
 
-    .skill-category {
+    .habilidad-category {
       background: rgba(255, 255, 255, 0.05);
       border-radius: calc(var(--radius) - 0.5rem);
       padding: 1.25rem;
       border-left: 4px solid var(--brand);
     }
 
-    .skill-category h3 {
+    .habilidad-category h3 {
       margin-top: 0;
       color: var(--accent);
       font-size: 1.1rem;
       margin-bottom: 1rem;
     }
 
-    /* Tags (skills) */
+    /* Tags (habilidades) */
     .tags {
       list-style: none; 
       padding: 0; 
@@ -225,7 +225,7 @@
       outline: 2px solid var(--ring);
     }
 
-    .skill-level {
+    .habilidad-level {
       display: block;
       font-size: 0.75rem;
       color: var(--muted);
@@ -233,13 +233,13 @@
       font-style: italic;
     }
 
-    /* Experience & projects */
-    .project {
+    /* Proyectos */
+    .projecto {
       display: grid; 
       gap: 0.75rem;
     }
     
-    .project-head {
+    .projecto-head {
       display: flex; 
       justify-content: space-between; 
       align-items: flex-start; 
@@ -247,7 +247,7 @@
       flex-wrap: wrap;
     }
     
-    .project-head h3 {
+    .projecto-head h3 {
       margin: 0;
       color: var(--accent);
     }
@@ -271,7 +271,7 @@
       border-top: 1px solid rgba(255,255,255,.08);
     }
 
-    /* Layout improvements */
+    /* web*/
     @media (min-width: 768px) {
       .header-grid {
         grid-template-columns: 2fr 1fr;
@@ -301,7 +301,7 @@
       }
     }
 
-    /* Mobile adjustments */
+    /* movil */
     @media (max-width: 767px) {
       .id-block {
         grid-template-columns: 1fr;
@@ -325,7 +325,7 @@
       border-radius: .25rem;
     }
 
-    /* Mejorar contraste para cumplir con AA */
+    /* accesibilidad mejora la vision */
     @media (prefers-contrast: more) {
       :root {
         --ink: #ffffff;
@@ -333,36 +333,4 @@
       }
     }
 
-    /* Impresión (A4 sencillo) */
-    @media print {
-      :root { 
-        --bg: white; 
-        --ink: #111827; 
-        --muted: #374151; 
-        --card: #f8f9fa;
-      }
-      
-      .skip-link {
-        display: none;
-      }
-      
-      body { 
-        background: white; 
-        color: var(--ink); 
-      }
-      
-      .site-header, .site-nav { 
-        display: none !important; 
-      }
-      
-      .card { 
-        box-shadow: none; 
-        border: 1px solid #e5e7eb; 
-        background: var(--card);
-      }
-      
-      .tags li {
-        border: 1px solid #e5e7eb;
-        background: #f8f9fa;
-      }
-    }
+   
