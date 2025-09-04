@@ -325,7 +325,7 @@
       border-radius: .25rem;
     }
 
-    /* Mejorar contraste para cumplir con AA */
+    /* accesibilidad mejora la vision */
     @media (prefers-contrast: more) {
       :root {
         --ink: #ffffff;
