@@ -75,7 +75,10 @@
       box-shadow: var(--shadow);
       display: block;
     }
-
+    .avatar:hover {
+    transform: rotate(-2deg) scale(1.05);
+    transition: transform 0.3s ease;
+  }
     .name {
       font-size: clamp(1.5rem, 2vw + 1rem, 2.2rem);
       line-height: 1.1;
@@ -124,7 +127,11 @@
       margin: 1.5rem 0;
       box-shadow: var(--shadow);
     }
-
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0,0,0,.4);
+      transition: all 0.3s ease;
+}
     .card h2 {
       margin-top: 0;
       font-size: clamp(1.2rem, 1vw + 1rem, 1.6rem);
